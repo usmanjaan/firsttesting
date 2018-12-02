@@ -3,4 +3,4 @@
 echo ---Deploying site 
 
 
-copy d:\home\site\repository\azureapp\target\*.war %DEPLOYMENT_TARGET%\webapps\*.war
+copy d:\home\site\repository\AppDB\target\*.war %DEPLOYMENT_TARGET%\webapps\*.war
