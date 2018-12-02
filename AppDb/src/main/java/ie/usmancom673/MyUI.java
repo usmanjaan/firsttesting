@@ -66,7 +66,7 @@ public class MyUI extends UI {
             List<Customer> customers = new ArrayList<Customer>();
             // While there are more records in the resultset
             ResultSet rs = connection.createStatement()
-                    .executeQuery("SELECT * FROM customerTable WHERE paid = 'false' ORDER BY AMOUNT DESC;");
+                    .executeQuery("SELECT * FROM customerTable WHERE paid = 'true' ORDER BY AMOUNT DESC;");
             while (rs.next()) {
                 // Add a new Customer instantiated with the fields from the record (that we
                 // want, we might not want all the fields, note how I skip the id)
